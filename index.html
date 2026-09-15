@@ -225,12 +225,396 @@
   </footer>
 
   <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const navigationMenu = document.querySelector('.nav-menu');
+    const firstMenuButton = document.querySelector('.menu-toggle');
+    const firstNavigationMenu = document.querySelector('.nav-menu');
 
-    menuButton.addEventListener('click', () => {
-      const isOpen = navigationMenu.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', isOpen);
+    firstMenuButton.addEventListener('click', () => {
+      const isOpen = firstNavigationMenu.classList.toggle('open');
+      firstMenuButton.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Productly design thinking landing page"
+  >
+
+  <title>Productly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container site-header__container">
+      <a class="logo" href="#top" aria-label="Productly home">
+  <span class="logo__mark" aria-hidden="true">
+    <i class="fa-solid fa-play"></i>
+  </span>
+
+  <p class="logo__text">Productly</p>
+</a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#product">Product</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#customers">Customers</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#pricing">Pricing</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="#resources">Resources</a>
+          </li>
+        </ul>
+
+        <div class="navbar__actions">
+          <a class="button button--secondary" href="#sign-in">Sign In</a>
+          <a class="button button--primary" href="#sign-up">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="product">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">The Design Thinking superpowers</h1>
+
+          <p class="hero__text">
+            Tools, tutorials, design and innovation experts, all in one place.
+            The most intuitive way to imagine your next user experience.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#sign-up">Get started</a>
+
+            <a class="hero__video-link" href="#video">
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+              <p class="hero__video-text">Watch the Video</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__image hero__image--placeholder" aria-hidden="true">
+  <i class="fa-solid fa-people-group"></i>
+</div>
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container features__container">
+        <h2 class="section-title">
+          We design tools to unveil your superpowers
+        </h2>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--purple">
+              <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i>
+            </div>
+
+            <h3 class="feature-card__title">First click tests</h3>
+
+            <p class="feature-card__text">
+              While most people enjoy casino gambling, sports betting,
+              lottery and bingo playing for the fun.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--yellow">
+              <i class="fa-solid fa-wave-square" aria-hidden="true"></i>
+            </div>
+
+            <h3 class="feature-card__title">Design surveys</h3>
+
+            <p class="feature-card__text">
+              Sports betting, lottery and bingo playing for the fun.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--red">
+              <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            </div>
+
+            <h3 class="feature-card__title">Preference tests</h3>
+
+            <p class="feature-card__text">
+              The Myspace page defines the individual, his or her
+              characteristics and personal choices.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon feature-card__icon--blue">
+              <i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>
+            </div>
+
+            <h3 class="feature-card__title">Five second tests</h3>
+
+            <p class="feature-card__text">
+              Personal choices and the overall personality of the person.
+            </p>
+          </article>
+        </div>
+
+        <a class="button button--primary features__button" href="#sign-up">
+          Sign up now
+        </a>
+      </div>
+    </section>
+
+    <section class="audience section" id="customers">
+      <div class="container audience__container">
+        <div class="audience__content">
+          <p class="eyebrow">Effortless Validation for</p>
+
+          <h2 class="section-title">Design Professionals</h2>
+
+          <p class="audience__intro">
+            The Myspace page defines the individual, his or her
+            characteristics, traits, personal choices and the overall
+            personality of the person.
+          </p>
+
+          <h3 class="audience__subtitle">Accessory makers</h3>
+
+          <p class="audience__text">
+            While most people enjoy casino gambling, sports betting,
+            lottery and bingo playing for the fun.
+          </p>
+
+          <h3 class="audience__subtitle">Alterationists</h3>
+
+          <p class="audience__text">
+            If you are looking for a new way to promote your business that
+            will not cost you more money.
+          </p>
+
+          <h3 class="audience__subtitle">Custom Design designers</h3>
+
+          <p class="audience__text">
+            If you are looking for a new way to promote your business.
+          </p>
+        </div>
+
+        <div class="audience__image audience__image--placeholder" aria-hidden="true">
+  <i class="fa-solid fa-pen-ruler"></i>
+</div>
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="audience audience--reverse section" id="pricing">
+      <div class="container audience__container">
+        <div class="audience__image audience__image--placeholder" aria-hidden="true">
+  <i class="fa-solid fa-people-arrows-left-right"></i>
+</div>
+          >
+        </div>
+
+        <div class="audience__content">
+          <p class="eyebrow">Easier decision making for</p>
+
+          <h2 class="section-title">Product Managers</h2>
+
+          <p class="audience__intro">
+            The Myspace page defines the individual, his or her
+            characteristics, traits, personal choices and the overall
+            personality of the person.
+          </p>
+
+          <ul class="check-list">
+            <li class="check-list__item">
+              <span class="check-list__icon" aria-hidden="true">
+                <i class="fa-solid fa-check"></i>
+              </span>
+
+              <p class="check-list__text">
+                Never worry about overpaying for your energy again.
+              </p>
+            </li>
+
+            <li class="check-list__item">
+              <span class="check-list__icon" aria-hidden="true">
+                <i class="fa-solid fa-check"></i>
+              </span>
+
+              <p class="check-list__text">
+                We will only switch you to companies that we trust.
+              </p>
+            </li>
+
+            <li class="check-list__item">
+              <span class="check-list__icon" aria-hidden="true">
+                <i class="fa-solid fa-check"></i>
+              </span>
+
+              <p class="check-list__text">
+                We track the markets daily and know where the savings are.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience section">
+      <div class="container audience__container">
+        <div class="audience__content">
+          <p class="eyebrow">Optimisation for</p>
+
+          <h2 class="section-title">Marketers</h2>
+
+          <p class="audience__intro">
+            Few would argue that, despite the advancements of feminism over
+            the past three decades, women still face a double standard.
+          </p>
+
+          <h3 class="audience__subtitle">Accessory makers</h3>
+
+          <p class="audience__text">
+            While most people enjoy casino gambling, sports betting,
+            lottery and bingo playing for the fun.
+          </p>
+
+          <h3 class="audience__subtitle">Alterationists</h3>
+
+          <p class="audience__text">
+            If you are looking for a new way to promote your business.
+          </p>
+
+          <h3 class="audience__subtitle">Custom Design designers</h3>
+
+          <p class="audience__text">
+            Create messages that connect with your customers.
+          </p>
+        </div>
+
+        <div class="audience__image audience__image--placeholder" aria-hidden="true">
+     <i class="fa-solid fa-chart-line"></i>
+     </div>
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section" id="resources">
+    <div class="container footer__container">
+      <a class="logo" href="#top" aria-label="Back to top">
+  <span class="logo__mark" aria-hidden="true">
+    <i class="fa-solid fa-play"></i>
+  </span>
+
+  <p class="logo__text">Productly</p>
+</a>
+
+      <div class="footer__links">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#about">About Us</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#blog">Blog</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#contact">Contact</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#disclaimer">Disclaimer</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#financing">Financing</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#privacy">Privacy Policy</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#terms">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="signup-form" id="sign-up">
+        <label class="visually-hidden" for="email">Email address</label>
+
+        <input
+          class="signup-form__input"
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <button class="button button--primary" type="submit">
+          Sign up now
+        </button>
+      </form>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".navbar");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("navbar--open");
+
+      menuButton.setAttribute("aria-expanded", isOpen);
     });
   </script>
 </body>
